@@ -6,7 +6,13 @@
 
         while (true)
         {
-            int numero = int.Parse(Console.ReadLine());
+            string input = Console.ReadLine();
+
+            if (!int.TryParse(input, out int numero))
+            {
+                Console.WriteLine("Entrada inválida, introduce un número del 1 al 7 (o 0 para salir):");
+                continue;
+            }
 
             // Bucle para seguir pidiendo números hasta que se introduzca 0
 
