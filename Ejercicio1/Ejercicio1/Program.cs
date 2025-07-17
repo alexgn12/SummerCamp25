@@ -19,7 +19,7 @@
             switch (numero)
             {
                 case 1:
-                    Console.WriteLine("Lunes");
+                    Console.WriteLine("Lune ");
                     break;
                 case 2:
                     Console.WriteLine("Martes");
